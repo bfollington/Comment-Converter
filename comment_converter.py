@@ -8,11 +8,11 @@ s = ""
 for line in f:
     if "//" in line and len(line) > 0:
         i = line.index("//")
-        l = line[:i] 
+        l = line[:i]
 
-        l += "/*" 
-        comment = line[i + 2:-1] 
-        comment.strip()
+        l += "/*"
+        comment = line[i + 2:-1]
+        comment = comment.strip()
         comment = ' ' + comment + ' '
         l += comment + "*/\n"
 
